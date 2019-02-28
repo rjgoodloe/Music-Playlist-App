@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Project2</string>
+    <string name="search_hint">Search</string>
+    <string name="search_for">Search for</string>
+    <string name="no_connection">NO CONNECTION</string>
+    <string name="cover_image">Cover Image</string>
+    <string name="artists_similar_to">Artists similar to:</string>
+    <string name="info">Info</string>
+    <string name="close">close</string>
+    <string name="api_at_last_fm">The information used to display these tracks, artists, and albums comes from the API at
+        last.fm
+    </string>
+</resources>

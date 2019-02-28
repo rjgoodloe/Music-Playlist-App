@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background_primary">
+
+    <ImageView
+            android:id="@+id/cover_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin_big"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+            android:id="@+id/track_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cover_img"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_large"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cover_img"
+            android:layout_marginTop="@dimen/vertical_spacing"
+
+    />
+
+    <TextView
+            android:id="@+id/track_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/track_title"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_large"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/track_title"
+            android:layout_marginTop="@dimen/vertical_spacing"
+
+    />
+
+    <TextView
+            android:id="@+id/track_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_large"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/track_artist"
+            android:layout_marginTop="@dimen/vertical_spacing"
+
+    />
+
+    <TextView
+            android:id="@+id/track_play_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_small"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/track_album"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+
+    />
+
+    <TextView
+            android:id="@+id/track_listeners"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_small"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/track_play_count"
+            android:layout_marginTop="@dimen/vertical_spacing"
+    />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/ic_add_24dp"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
